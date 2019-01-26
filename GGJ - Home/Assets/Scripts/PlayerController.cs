@@ -57,7 +57,8 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        bool isRun = Input.GetAxisRaw("RunKey") != 0f;
+        bool isRun = true;
+        // bool isRun = Input.GetAxisRaw("RunKey") != 0f;
         float speed = isRun ? moveSpeed : runSpeed;
 
         if (isRun)
@@ -184,11 +185,11 @@ public class PlayerController : MonoBehaviour
         //yeri parenta göre ayarla
         ObjectToBeTaken.transform.localPosition = ObjectToBeTaken.GetComponent<Weapon>().PredeterminedPosition;
 
-        ObjectToBeTaken.transform.localRotation =  Quaternion.Euler(ParentToHoldObject.transform.rotation.x + ObjectToBeTaken.GetComponent<Weapon>().PredeterminedRotation.x, 
-                                                                    ParentToHoldObject.transform.rotation.y + ObjectToBeTaken.GetComponent<Weapon>().PredeterminedRotation.y, 
+        ObjectToBeTaken.transform.localRotation = Quaternion.Euler(ParentToHoldObject.transform.rotation.x + ObjectToBeTaken.GetComponent<Weapon>().PredeterminedRotation.x,
+                                                                    ParentToHoldObject.transform.rotation.y + ObjectToBeTaken.GetComponent<Weapon>().PredeterminedRotation.y,
                                                                     ParentToHoldObject.transform.rotation.z + ObjectToBeTaken.GetComponent<Weapon>().PredeterminedRotation.z);
 
-           // ObjectToBeTaken.gameObject.GetComponent<Weapon>().takenRotation;
+        // ObjectToBeTaken.gameObject.GetComponent<Weapon>().takenRotation;
 
         //Eldeki silahı setle
         WeaponOnHand = ObjectToBeTaken;
