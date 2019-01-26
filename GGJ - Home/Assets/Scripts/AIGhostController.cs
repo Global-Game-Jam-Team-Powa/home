@@ -9,6 +9,9 @@ public class AIGhostController : MonoBehaviour
     private NavMeshAgent m_NavMeshAgent;
     public GameObject m_Target;
 
+    private Health health;
+    public EnemyLevel Level = EnemyLevel.Level_1;
+
     public float startWaitTime;
     private float waitTime;
 
@@ -18,6 +21,7 @@ public class AIGhostController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        health = gameObject.GetComponent<Health>();
         m_NavMeshAgent = GetComponent<NavMeshAgent>();
         waitTime = startWaitTime;
     }
@@ -54,9 +58,9 @@ public class AIGhostController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Wall")
+        if (collision.transform.tag == "Player")
         {
-            // ChangeLayers(gameObject, "Not Solid");
+            health.LoseHealth(this.Level);
         }
     }
 
@@ -75,5 +79,10 @@ public class AIGhostController : MonoBehaviour
         {
             ChangeLayers(child.gameObject, newLayer);
         }
+    }
+
+    public Health getHealth()
+    {
+        return health;
     }
 }
