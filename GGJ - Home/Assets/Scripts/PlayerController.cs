@@ -60,16 +60,16 @@ public class PlayerController : MonoBehaviour
         bool isRun = Input.GetAxisRaw("RunKey") != 0f;
         float speed = isRun ? moveSpeed : runSpeed;
 
-        if (isRun)
+        //if (isRun)
         {
-            anim.SetBool("IsWalking", false);
+            //anim.SetBool("IsWalking", false);
             anim.SetBool("IsRunning", true);
         }
-        else
-        {
-            anim.SetBool("IsRunning", false);
-            anim.SetBool("IsWalking", true);
-        }
+        // else
+        // {
+           // anim.SetBool("IsRunning", false);
+            // anim.SetBool("IsWalking", true);
+        // }
 
         Vector3 direction = new Vector3(Input.GetAxisRaw("HorizontalKey"), 0f, Input.GetAxisRaw("VerticalKey"));
         Vector3 rightMovement = right * speed * Time.deltaTime * Input.GetAxisRaw("HorizontalKey");
