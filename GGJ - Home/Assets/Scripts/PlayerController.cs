@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed;
     public float runSpeed;
-    private int Power;
+    private int Power = 10;
 
     private Vector3 forward;
     private Vector3 right;
@@ -183,6 +183,7 @@ public class PlayerController : MonoBehaviour
 
         //yeri parenta göre ayarla
         ObjectToBeTaken.transform.localPosition = Vector3.zero;
+        ObjectToBeTaken.transform.rotation = ObjectToBeTaken.gameObject.GetComponent<Weapon>().takenRotation;
 
         //Eldeki silahı setle
         WeaponOnHand = ObjectToBeTaken;

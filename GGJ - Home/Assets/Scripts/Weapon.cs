@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Weapon : MonoBehaviour
 {
-   public int Power = 10;
+    public int Power = 10;
     Score GameScore;
     float StartPosY;
+
+    public Quaternion takenRotation; 
+
     private void Start()
     {
         GameScore = GameObject.FindObjectOfType<Score>();
@@ -22,7 +25,7 @@ public class Weapon : MonoBehaviour
             Debug.Log("Enemy Object hit with weapon.");
             collision.gameObject.GetComponent<AIGhostController>().getHealth().LoseHealth(Power, collision.gameObject);  // enemy objesinin healthini düşür
             GameScore.AddToGameScore(collision.gameObject.GetComponent<AIGhostController>().Level); //oyun skoruna ekleme yap 
-           }
+        }
 
     }
 
