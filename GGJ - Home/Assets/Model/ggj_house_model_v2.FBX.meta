@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: d7d51991027011a449bc382e04390471
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: backlight
+    100002: bed_child
+    100004: body
+    100006: Box001
+    100008: Box003
+    100010: Box004
+    100012: Box005
+    100014: Car
+    100016: car
+    100018: Cylinder001
+    100020: Cylinder002
+    100022: front_fender
+    100024: //RootNode
+    100026: headlight
+    100028: lattice_1
+    100030: Layer:0
+    100032: lights
+    100034: Line001
+    100036: Object001
+    100038: Object002
+    100040: Plane001
+    100042: rear_fender
+    100044: wheel1_1
+    100046: wheel_1
+    400000: backlight
+    400002: bed_child
+    400004: body
+    400006: Box001
+    400008: Box003
+    400010: Box004
+    400012: Box005
+    400014: Car
+    400016: car
+    400018: Cylinder001
+    400020: Cylinder002
+    400022: front_fender
+    400024: //RootNode
+    400026: headlight
+    400028: lattice_1
+    400030: Layer:0
+    400032: lights
+    400034: Line001
+    400036: Object001
+    400038: Object002
+    400040: Plane001
+    400042: rear_fender
+    400044: wheel1_1
+    400046: wheel_1
+    2100000: No Name
+    2100002: engine grille
+    2100004: car body
+    2100006: glass
+    2100008: headlight
+    2100010: rear lights
+    2100012: wheels
+    2300000: backlight
+    2300002: body
+    2300004: Box001
+    2300006: Box003
+    2300008: Box004
+    2300010: Box005
+    2300012: Cylinder001
+    2300014: Cylinder002
+    2300016: front_fender
+    2300018: headlight
+    2300020: lattice_1
+    2300022: Layer:0
+    2300024: Line001
+    2300026: Object001
+    2300028: Object002
+    2300030: Plane001
+    2300032: rear_fender
+    2300034: wheel1_1
+    2300036: wheel_1
+    3300000: backlight
+    3300002: body
+    3300004: Box001
+    3300006: Box003
+    3300008: Box004
+    3300010: Box005
+    3300012: Cylinder001
+    3300014: Cylinder002
+    3300016: front_fender
+    3300018: headlight
+    3300020: lattice_1
+    3300022: Layer:0
+    3300024: Line001
+    3300026: Object001
+    3300028: Object002
+    3300030: Plane001
+    3300032: rear_fender
+    3300034: wheel1_1
+    3300036: wheel_1
+    4300000: Layer:0
+    4300002: Object001
+    4300004: Object002
+    4300006: Line001
+    4300008: lattice_1
+    4300010: rear_fender
+    4300012: front_fender
+    4300014: body
+    4300016: headlight
+    4300018: backlight
+    4300020: wheel_1
+    4300022: wheel1_1
+    4300024: Box001
+    4300026: Plane001
+    4300028: Box003
+    4300030: Box005
+    4300032: Box004
+    4300034: Cylinder002
+    4300036: Cylinder001
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
