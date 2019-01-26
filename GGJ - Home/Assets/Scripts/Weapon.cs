@@ -9,9 +9,10 @@ public class Weapon : MonoBehaviour
     Score GameScore;
     float StartPosY;
 
-    public Quaternion takenRotation; 
+    public Quaternion PredeterminedRotation;
+    public Vector3 PredeterminedPosition;
 
-    private void Start()
+     void Start()
     {
         GameScore = GameObject.FindObjectOfType<Score>();
         StartPosY = this.transform.position.y;

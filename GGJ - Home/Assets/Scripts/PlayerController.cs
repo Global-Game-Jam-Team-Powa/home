@@ -182,8 +182,13 @@ public class PlayerController : MonoBehaviour
         ObjectToBeTaken.transform.GetComponent<Collider>().isTrigger = false;
 
         //yeri parenta göre ayarla
-        ObjectToBeTaken.transform.localPosition = Vector3.zero;
-        ObjectToBeTaken.transform.rotation = ObjectToBeTaken.gameObject.GetComponent<Weapon>().takenRotation;
+        ObjectToBeTaken.transform.localPosition = ObjectToBeTaken.GetComponent<Weapon>().PredeterminedPosition;
+
+        ObjectToBeTaken.transform.localRotation =  Quaternion.Euler(ParentToHoldObject.transform.rotation.x + ObjectToBeTaken.GetComponent<Weapon>().PredeterminedRotation.x, 
+                                                                    ParentToHoldObject.transform.rotation.y + ObjectToBeTaken.GetComponent<Weapon>().PredeterminedRotation.y, 
+                                                                    ParentToHoldObject.transform.rotation.z + ObjectToBeTaken.GetComponent<Weapon>().PredeterminedRotation.z);
+
+           // ObjectToBeTaken.gameObject.GetComponent<Weapon>().takenRotation;
 
         //Eldeki silahı setle
         WeaponOnHand = ObjectToBeTaken;

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2173,15 +2173,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 028618d0dddbb754687326828b54ba84, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.301
+      value: -7.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 028618d0dddbb754687326828b54ba84, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.048
+      value: 1.12
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 028618d0dddbb754687326828b54ba84, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.757
+      value: -10.93
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 028618d0dddbb754687326828b54ba84, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2249,7 +2249,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Power: 10
-  takenRotation: {x: 0, y: 180, z: -90}
+  PredeterminedRotation: {x: 180, y: 0, z: 90, w: 0}
+  PredeterminedPosition: {x: 0.063, y: -0.002, z: 0.03}
 --- !u!1 &641300527 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100030, guid: d7d51991027011a449bc382e04390471,
@@ -2814,7 +2815,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Power: 10
-  takenRotation: {x: 0, y: 0, z: 0}
+  PredeterminedRotation: {x: 0, y: 0, z: 0, w: 0}
+  PredeterminedPosition: {x: 0, y: 0, z: 0}
 --- !u!65 &1926724207
 BoxCollider:
   m_ObjectHideFlags: 0
