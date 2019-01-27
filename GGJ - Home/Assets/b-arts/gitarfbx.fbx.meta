@@ -133,7 +133,47 @@ ModelImporter:
     4300026: Object001
     7400000: Take 001
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: 16b05d8881d5416488eaf45e3478fbd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Default
+    second: {fileID: 2100000, guid: b754949f3c10ad54f9be0b273efa8573, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 07 - Default
+    second: {fileID: 2100000, guid: 06ff47f7ed0bf074ba53197a16f2914b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #25'
+    second: {fileID: 2100000, guid: b36699079d1a1c546acee0a5ef9fc21d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #26'
+    second: {fileID: 2100000, guid: fa02f6c091207b049b87711ee52dbc36, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 1ceaadfb6b3796d458fa8fe160ed3f8a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sitkaspruce-1-300x300
+    second: {fileID: 2800000, guid: e971eac748bc59f4dad1e135ad42ea69, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: the_look_of_warm_oak_wood_grain_texture_guitar_case-r631ea4ba7056442c98cc23f701734468_efyiw_307
+    second: {fileID: 2800000, guid: 3418e93057725de44a5eef87daa5a07a, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

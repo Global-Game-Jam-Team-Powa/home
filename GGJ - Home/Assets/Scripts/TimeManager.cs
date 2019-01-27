@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
-     Text time;
+    Text time;
     GameController GM;
     public GameObject player;
 
@@ -23,14 +23,22 @@ public class TimeManager : MonoBehaviour
         if (Time.timeSinceLevelLoad > 300)
         {
             player.transform.GetComponent<Animator>().SetBool("IsWin", true);
-            GM.GameWin();
+           // GM.GameWin();
         }
     }
     void UpdateTime()
     {
-        float timer = Time.timeSinceLevelLoad;
-        string minutes = Mathf.Floor(timer / 60).ToString("00");
-        string seconds = (timer % 60).ToString("00");
-        time.text = minutes+":"+seconds;
+        float timer = 299 - Time.timeSinceLevelLoad;
+        if (timer > 0f)
+        {
+            string minutes = Mathf.Floor(timer / 60).ToString("00");
+            string seconds = (timer % 60).ToString("00");
+            time.text = minutes + ":" + seconds;
+        }
+        else
+        {
+            time.text = "00:00";
+        }
+
     }
 }
