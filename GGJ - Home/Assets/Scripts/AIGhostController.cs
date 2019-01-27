@@ -43,6 +43,7 @@ public class AIGhostController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
         if (randomSpotCounter < 4)
         {
             GoRandomSpot();

@@ -7,6 +7,7 @@ public class TimeManager : MonoBehaviour
 {
      Text time;
     GameController GM;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,8 @@ public class TimeManager : MonoBehaviour
         UpdateTime();
         if (Time.timeSinceLevelLoad > 300)
         {
-            GM.GameOver();
+            player.transform.GetComponent<Animator>().SetBool("IsWin", true);
+            GM.GameWin();
         }
     }
     void UpdateTime()
