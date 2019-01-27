@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-   public int HealthScore=100;
+    public int HealthScore = 100;
     readonly int Step = 5;
     Score ScoreObject;
 
@@ -15,7 +15,7 @@ public class Health : MonoBehaviour
 
     public void GainHealth(int Gain)
     {
-       if( HealthScore + Gain > 100)
+        if (HealthScore + Gain > 100)
         {
             HealthScore = 100;
         }
@@ -25,20 +25,20 @@ public class Health : MonoBehaviour
         }
     }
 
-   public void LoseHealth(EnemyLevel Strenght)
+    public void LoseHealth(EnemyLevel Strenght)
     {
-        if(HealthScore -(int)Strenght * Step <= 0)
+        if (HealthScore - (int)Strenght * Step <= 0)
         {
             HealthScore = 0;
-            GameObject.FindObjectOfType<GameController>().GameOver();          
+            GameObject.FindObjectOfType<GameController>().GameOver();
         }
         else
-        { 
-        HealthScore -= (int)Strenght * Step;
+        {
+            HealthScore -= (int)Strenght * Step;
         }
     }
 
-    public void LoseHealth(int Strenght,GameObject EnemyObject)
+    public void LoseHealth(int Strenght, GameObject EnemyObject)
     {
         if (HealthScore - Strenght * Step <= 0)
         {

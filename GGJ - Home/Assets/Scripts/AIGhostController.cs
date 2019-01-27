@@ -5,12 +5,9 @@ using UnityEngine.AI;
 
 public class AIGhostController : MonoBehaviour
 {
-    private NavMeshAgent m_NavMeshAgent;
-
     private Health health;
     public EnemyLevel Level = EnemyLevel.Level_1;
 
-    public float startWaitTime;
     private float waitTime;
     public float speed;
     private bool goTarget;
@@ -24,15 +21,18 @@ public class AIGhostController : MonoBehaviour
     public Transform[] moveSpots;
     public Transform[] outSpots;
 
+    public GameObject ParentToHoldObject;
+    private GameObject takenTargetMemory;
+    private Transform takenTargetMemoryStartTransform;
+
+    private Vector3 ghostPivot = new Vector3(-2.98f, -0.26f, 0.47f);
+
     // Start is called before the first frame update
     void Start()
     {
         health = gameObject.GetComponent<Health>();
-        m_NavMeshAgent = GetComponent<NavMeshAgent>();
-        // m_TargetList = FindObjectsOfType<TargetMemory>();
 
-        waitTime = startWaitTime;
-
+        waitTime = Random.Range(1, 6);
         randomSpot = Random.Range(0, moveSpots.Length);
         randomTarget = Random.Range(0, m_TargetList.Length);
         randomOutSpot = Random.Range(0, outSpots.Length);
@@ -49,8 +49,8 @@ public class AIGhostController : MonoBehaviour
         }
         else if (goTarget)
         {
-            GameObject m_Target = m_TargetList[randomTarget].gameObject;
-            m_NavMeshAgent.SetDestination(m_Target.transform.position);
+            Vector3 targetPosition = m_TargetList[randomTarget].gameObject.transform.position + ghostPivot;
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         }
         else if (randomSpotCounter == 4)
         {
@@ -64,31 +64,40 @@ public class AIGhostController : MonoBehaviour
 
     void GoRandomSpot()
     {
-        transform.position = Vector3.MoveTowards(transform.position, moveSpots[randomSpot].position, speed * Time.deltaTime);
-        if (Vector3.Distance(transform.position, moveSpots[randomSpot].position) < 0.2f)
+        Vector3 targetPosition = moveSpots[randomSpot].position + ghostPivot;
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        if (Vector3.Distance(transform.position, targetPosition) < 0.2f)
         {
-            if (waitTime <= 0f)
-            {
-                randomSpotCounter++;
-                randomSpot = Random.Range(0, moveSpots.Length);
-                waitTime = startWaitTime;
-            }
-            else
-            {
-                waitTime -= Time.deltaTime;
-            }
+            randomSpotCounter++;
+            randomSpot = Random.Range(0, moveSpots.Length);
         }
     }
 
     void GoRandomOutSpot()
     {
-        GameObject m_Target = outSpots[randomOutSpot].gameObject;
-        m_NavMeshAgent.SetDestination(m_Target.transform.position);
-        if (Vector3.Distance(transform.position, m_Target.transform.position) < 0.1f)
+        Vector3 targetPosition = outSpots[randomOutSpot].gameObject.transform.position + ghostPivot;
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
         {
-            // TODO:Obje varsa objeyi bırak ve adamın canından götür!!
-            randomSpotCounter = 1;
-            goTarget = true;
+            if (waitTime <= 0f)
+            {
+                if (takenTargetMemory != null) // Obje varsa objeyi birak ve adamin canindan gotur!!
+                {
+                    takenTargetMemory.transform.SetParent(takenTargetMemory.transform);
+                    ChangeLayers(takenTargetMemory, "Default");
+                    takenTargetMemory = null;
+                    health.LoseHealth(this.Level);
+                    takenTargetMemory = null;
+                }
+                
+                randomSpotCounter = 1;
+                goTarget = true;
+                waitTime = Random.Range(1, 6);
+            }
+            else
+            {
+                waitTime -= Time.deltaTime;
+            }
         }
     }
 
@@ -100,7 +109,11 @@ public class AIGhostController : MonoBehaviour
         }
         if (other.tag == "Memories")
         {
-            // TODO: buraya eline alma yap!
+            takenTargetMemoryStartTransform = other.transform;
+            other.transform.SetParent(ParentToHoldObject.transform);
+            other.transform.localPosition = ParentToHoldObject.transform.position;
+            ChangeLayers(other.gameObject, "Not Solid");
+            takenTargetMemory = other.gameObject;
             goTarget = false;
             randomTarget = Random.Range(0, m_TargetList.Length);
         }
@@ -142,5 +155,10 @@ public class AIGhostController : MonoBehaviour
     public Health getHealth()
     {
         return health;
+    }
+
+    private void OnBecameVisible()
+    {
+        FindObjectOfType<AudioManager>().Play("GhostAction");
     }
 }

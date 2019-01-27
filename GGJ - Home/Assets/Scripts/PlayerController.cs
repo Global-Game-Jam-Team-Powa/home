@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour
     public float runSpeed;
     private int Power = 10;
 
+    private bool isThrowing;
+    private float throwTime = 2f;
+
     private Vector3 forward;
     private Vector3 right;
 
@@ -41,6 +44,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetAxisRaw("Throw") != 0f)
         {
+            isThrowing = true;
             anim.SetBool("IsThrowing", true);
         }
         else if (Input.GetAxisRaw("HorizontalKey") != 0f || Input.GetAxisRaw("VerticalKey") != 0f)
@@ -57,9 +61,8 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        bool isRun = true;
-        // bool isRun = Input.GetAxisRaw("RunKey") != 0f;
-        float speed = isRun ? moveSpeed : runSpeed;
+        bool isRun = Input.GetAxisRaw("RunKey") != 0f;
+        float speed = isRun ? runSpeed : moveSpeed;
 
         if (isRun)
         {
