@@ -7,9 +7,11 @@ public class Health : MonoBehaviour
     public int HealthScore = 100;
     readonly int Step = 5;
     Score ScoreObject;
+    AIGhostController Ghost;
 
     private void Start()
     {
+        Ghost = GameObject.FindObjectOfType<AIGhostController>();
         ScoreObject = GameObject.FindObjectOfType<Score>();
     }
 
@@ -40,11 +42,12 @@ public class Health : MonoBehaviour
 
     public void LoseHealth(int Strenght, GameObject EnemyObject)
     {
+        Debug.Log("Ghost " + Strenght * Step + " can kaybetti.");
         if (HealthScore - Strenght * Step <= 0)
         {
-            HealthScore = 0;
-            Destroy(EnemyObject);
-            ScoreObject.EnemyBonus(EnemyObject);
+            
+            HealthScore = 100;
+            Ghost.GetOut();
         }
         else
         {

@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed;
     public float runSpeed;
-    private int Power = 10;
+    private int Power = 5;
 
     private bool isThrowing;
     private float throwTime = 2f;
@@ -100,6 +100,21 @@ public class PlayerController : MonoBehaviour
                 WeaponLogic(collision.gameObject);
             }
         }
+        if (collision.gameObject.GetComponent<AIGhostController>() != null && Input.GetKey(KeyCode.Space)) //TODO Tugçe keyboard map
+        {
+            Debug.Log("Hello Ghost");
+            bool WeaponAttack = false;
+           
+           if (WeaponOnHand!= null)
+                {
+                    collision.gameObject.GetComponent<Health>().LoseHealth(WeaponOnHand.GetComponent<Weapon>().Power + Power, collision.gameObject);
+                    WeaponAttack = true;                
+                }            
+            if (!WeaponAttack)
+            {
+                collision.gameObject.GetComponent<Health>().LoseHealth(Power, collision.gameObject);
+            }
+        }
     }
 
     private void OnTriggerExit(Collider collision)
@@ -128,6 +143,7 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.GetComponent<AIGhostController>() != null)
         {
+            Debug.Log("Hello Ghost");
             bool WeaponAttack = false;
             foreach (ContactPoint cols in collision.contacts)
             {

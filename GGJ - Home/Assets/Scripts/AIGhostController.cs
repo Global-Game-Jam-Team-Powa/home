@@ -7,6 +7,7 @@ public class AIGhostController : MonoBehaviour
 {
     private Health health;
     public EnemyLevel Level = EnemyLevel.Level_1;
+    private LifeManager LifeManager;
 
     private float waitTime;
     public float speed;
@@ -17,13 +18,12 @@ public class AIGhostController : MonoBehaviour
     private int randomTarget;
     private int randomOutSpot;
 
-    public GameObject[] m_TargetList;
+    public List<GameObject> m_TargetList;
     public Transform[] moveSpots;
     public Transform[] outSpots;
 
     public GameObject ParentToHoldObject;
-    private GameObject takenTargetMemory;
-    private Transform takenTargetMemoryStartTransform;
+    public GameObject takenTargetMemory;
 
     private Vector3 ghostPivot = new Vector3(-2.98f, -0.26f, 0.47f);
 
@@ -31,10 +31,10 @@ public class AIGhostController : MonoBehaviour
     void Start()
     {
         health = gameObject.GetComponent<Health>();
-
+        LifeManager = GameObject.FindObjectOfType<LifeManager>();
         waitTime = Random.Range(1, 6);
         randomSpot = Random.Range(0, moveSpots.Length);
-        randomTarget = Random.Range(0, m_TargetList.Length);
+        randomTarget = Random.Range(0, m_TargetList.Count);
         randomOutSpot = Random.Range(0, outSpots.Length);
         randomSpotCounter = 1;
         goTarget = true;
@@ -50,6 +50,7 @@ public class AIGhostController : MonoBehaviour
         else if (goTarget)
         {
             Vector3 targetPosition = m_TargetList[randomTarget].gameObject.transform.position + ghostPivot;
+            
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         }
         else if (randomSpotCounter == 4)
@@ -83,11 +84,14 @@ public class AIGhostController : MonoBehaviour
             {
                 if (takenTargetMemory != null) // Obje varsa objeyi birak ve adamin canindan gotur!!
                 {
-                    takenTargetMemory.transform.SetParent(takenTargetMemory.transform);
-                    ChangeLayers(takenTargetMemory, "Default");
+                    m_TargetList.Remove(takenTargetMemory); 
+                    //takenTargetMemory.transform.SetParent(takenTargetMemory.transform);
+                    Destroy(takenTargetMemory);
+               //     ChangeLayers(takenTargetMemory, "Default");
                     takenTargetMemory = null;
-                    health.LoseHealth(this.Level);
-                    takenTargetMemory = null;
+                   // health.LoseHealth(this.Level);
+                    LifeManager.LoseLife();
+
                 }
                 
                 randomSpotCounter = 1;
@@ -107,15 +111,15 @@ public class AIGhostController : MonoBehaviour
         {
             ChangeLayers(gameObject, "Not Solid");
         }
-        if (other.tag == "Memories")
+        if (other.tag == "Memories" && takenTargetMemory==null)
         {
-            takenTargetMemoryStartTransform = other.transform;
             other.transform.SetParent(ParentToHoldObject.transform);
             other.transform.localPosition = ParentToHoldObject.transform.position;
             ChangeLayers(other.gameObject, "Not Solid");
             takenTargetMemory = other.gameObject;
+
             goTarget = false;
-            randomTarget = Random.Range(0, m_TargetList.Length);
+            randomTarget = Random.Range(0, m_TargetList.Count);
         }
     }
 
@@ -160,5 +164,17 @@ public class AIGhostController : MonoBehaviour
     private void OnBecameVisible()
     {
         FindObjectOfType<AudioManager>().Play("GhostAction");
+    }
+
+    public void GetOut()
+    {
+        randomSpotCounter = 5;
+        if (!goTarget) { 
+        takenTargetMemory.GetComponent<Memory>().GhostFeltTheMemory();
+            takenTargetMemory = null;
+
+        }
+        goTarget = false;
+
     }
 }
