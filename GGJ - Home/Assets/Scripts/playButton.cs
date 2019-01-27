@@ -10,4 +10,9 @@ public class playButton : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
     }
+
+    public void replay_buttonn_Onclick()
+    {
+        SceneManager.LoadScene("FirstScene");
+    }
 }
