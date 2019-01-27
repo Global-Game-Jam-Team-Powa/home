@@ -27,18 +27,6 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void LoseHealth(EnemyLevel Strenght)
-    {
-        if (HealthScore - (int)Strenght * Step <= 0)
-        {
-            HealthScore = 0;
-            GameObject.FindObjectOfType<GameController>().GameOver();
-        }
-        else
-        {
-            HealthScore -= (int)Strenght * Step;
-        }
-    }
 
     public void LoseHealth(int Strenght, GameObject EnemyObject)
     {

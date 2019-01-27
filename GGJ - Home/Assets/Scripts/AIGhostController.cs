@@ -85,11 +85,8 @@ public class AIGhostController : MonoBehaviour
                 if (takenTargetMemory != null) // Obje varsa objeyi birak ve adamin canindan gotur!!
                 {
                     m_TargetList.Remove(takenTargetMemory); 
-                    //takenTargetMemory.transform.SetParent(takenTargetMemory.transform);
                     Destroy(takenTargetMemory);
-               //     ChangeLayers(takenTargetMemory, "Default");
                     takenTargetMemory = null;
-                   // health.LoseHealth(this.Level);
                     LifeManager.LoseLife();
 
                 }
@@ -135,7 +132,7 @@ public class AIGhostController : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
-            health.LoseHealth(this.Level);
+           // health.LoseHealth(this.Level);
         }
     }
 
@@ -168,8 +165,9 @@ public class AIGhostController : MonoBehaviour
 
     public void GetOut()
     {
+        Debug.Log("Ghost Geberdi");
         randomSpotCounter = 5;
-        if (!goTarget) { 
+        if (takenTargetMemory   !=null) { 
         takenTargetMemory.GetComponent<Memory>().GhostFeltTheMemory();
             takenTargetMemory = null;
 
