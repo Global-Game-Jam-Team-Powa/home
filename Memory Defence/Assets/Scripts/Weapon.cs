@@ -21,7 +21,7 @@ public class Weapon : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Object hit with Weapon");
-        if (collision.gameObject.GetComponent<AIGhostController>() != null)  //vurduğu obje enemy ise 
+        if (collision.gameObject.GetComponent<AIGhostController>() != null && Input.GetKey(KeyCode.Space))  //vurduğu obje enemy ise 
         {
             Debug.Log("Enemy Object hit with weapon.");
             collision.gameObject.GetComponent<AIGhostController>().getHealth().LoseHealth(Power, collision.gameObject);  // enemy objesinin healthini düşür

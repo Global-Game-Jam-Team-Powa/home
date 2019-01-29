@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private int Power = 5;
 
     private bool isThrowing;
-    private float throwTime = 2f;
+    private float throwTime = 1f;
 
     private Vector3 forward;
     private Vector3 right;
@@ -37,26 +37,38 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (!isThrowing)
         {
-            if(WeaponOnHand!=null)
-            LeaveWeapon();
-        }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                if (WeaponOnHand != null)
+                    LeaveWeapon();
+            }
 
-        if (Input.GetAxisRaw("Throw") != 0f)
-        {
-            isThrowing = true;
-            anim.SetBool("IsThrowing", true);
-        }
-        else if (Input.GetAxisRaw("HorizontalKey") != 0f || Input.GetAxisRaw("VerticalKey") != 0f)
-        {
-            Move();
+            if (Input.GetAxisRaw("Throw") != 0f)
+            {
+                isThrowing = true;
+                anim.SetBool("IsThrowing", true);
+            }
+            else if (Input.GetAxisRaw("HorizontalKey") != 0f || Input.GetAxisRaw("VerticalKey") != 0f)
+            {
+                Move();
+            }
+            else
+            {
+                anim.SetBool("IsWalking", false);
+                anim.SetBool("IsRunning", false);
+                anim.SetBool("IsThrowing", false);
+            }
         }
         else
         {
-            anim.SetBool("IsWalking", false);
-            anim.SetBool("IsRunning", false);
-            anim.SetBool("IsThrowing", false);
+            throwTime -= Time.deltaTime;
+            if (throwTime <= 0f)
+            {
+                isThrowing = false;
+                throwTime = 1f;
+            }
         }
     }
 
@@ -105,12 +117,12 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Hello Ghost");
             bool WeaponAttack = false;
-           
-           if (WeaponOnHand!= null)
-                {
-                    collision.gameObject.GetComponent<Health>().LoseHealth(WeaponOnHand.GetComponent<Weapon>().Power + Power, collision.gameObject);
-                    WeaponAttack = true;                
-                }            
+
+            if (WeaponOnHand != null)
+            {
+                collision.gameObject.GetComponent<Health>().LoseHealth(WeaponOnHand.GetComponent<Weapon>().Power + Power, collision.gameObject);
+                WeaponAttack = true;
+            }
             if (!WeaponAttack)
             {
                 collision.gameObject.GetComponent<Health>().LoseHealth(Power, collision.gameObject);

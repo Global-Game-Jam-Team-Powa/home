@@ -51,7 +51,7 @@ public class AIGhostController : MonoBehaviour
         else if (goTarget)
         {
             Vector3 targetPosition = m_TargetList[randomTarget].gameObject.transform.position + ghostPivot;
-            
+
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         }
         else if (randomSpotCounter == 4)
@@ -85,13 +85,13 @@ public class AIGhostController : MonoBehaviour
             {
                 if (takenTargetMemory != null) // Obje varsa objeyi birak ve adamin canindan gotur!!
                 {
-                    m_TargetList.Remove(takenTargetMemory); 
+                    m_TargetList.Remove(takenTargetMemory);
                     Destroy(takenTargetMemory);
                     takenTargetMemory = null;
                     LifeManager.LoseLife();
-
+                    randomTarget = Random.Range(0, m_TargetList.Count);
                 }
-                
+
                 randomSpotCounter = 1;
                 goTarget = true;
                 waitTime = Random.Range(1, 6);
@@ -109,12 +109,13 @@ public class AIGhostController : MonoBehaviour
         {
             ChangeLayers(gameObject, "Not Solid");
         }
-        if (other.tag == "Memories" && takenTargetMemory==null)
+        if (other.tag == "Memories" && goTarget && takenTargetMemory == null)
         {
             other.transform.SetParent(ParentToHoldObject.transform);
             other.transform.localPosition = ParentToHoldObject.transform.position;
             ChangeLayers(other.gameObject, "Not Solid");
             takenTargetMemory = other.gameObject;
+            other.GetComponent<Collider>().isTrigger = true;
 
             goTarget = false;
             randomTarget = Random.Range(0, m_TargetList.Count);
@@ -126,22 +127,6 @@ public class AIGhostController : MonoBehaviour
         if (other.tag == "Wall")
         {
             ChangeLayers(gameObject, "Default");
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.transform.tag == "Player")
-        {
-           // health.LoseHealth(this.Level);
-        }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.tag == "Wall")
-        {
-            // ChangeLayers(gameObject, "Default");
         }
     }
 
@@ -168,8 +153,9 @@ public class AIGhostController : MonoBehaviour
     {
         Debug.Log("Ghost Geberdi");
         randomSpotCounter = 5;
-        if (takenTargetMemory   !=null) { 
-        takenTargetMemory.GetComponent<Memory>().GhostFeltTheMemory();
+        if (takenTargetMemory != null)
+        {
+            takenTargetMemory.GetComponent<Memory>().GhostFeltTheMemory();
             takenTargetMemory = null;
 
         }
