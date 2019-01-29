@@ -1,0 +1,1392 @@
+fileFormatVersion: 2
+guid: 621f8f05fab344a4ea7526e65349930f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: AGA_Base006
+    100002: AGA_Cover007
+    100004: AGA_Cover008
+    100006: AGA_Cover_Base008
+    100008: AGA_Cover_Base009
+    100010: AGA_Cover_Handle013
+    100012: AGA_Cover_Handle014
+    100014: AGA_Cover_Handle015
+    100016: AGA_Cover_Handle016
+    100018: AGA_Cover_Hinge001
+    100020: AGA_Cover_Hinge002
+    100022: AGA_Door020
+    100024: AGA_Door023
+    100026: AGA_Door024
+    100028: AGA_Door025
+    100030: AGA_Door_Hinge001
+    100032: AGA_Door_Hinge002
+    100034: AGA_Door_Hinge003
+    100036: AGA_Door_Hinge004
+    100038: AGA_Door_Hinge005
+    100040: AGA_Door_Hinge006
+    100042: AGA_Door_Hinge007
+    100044: AGA_Door_Hinge008
+    100046: AGA_Door_Latch001
+    100048: AGA_Door_Latch002
+    100050: AGA_Door_Latch003
+    100052: AGA_Door_Latch004
+    100054: AGA_Front011
+    100056: AGA_Front012
+    100058: AGA_Handlebar009
+    100060: AGA_Top005
+    100062: ANTENA
+    100064: backlight
+    100066: basket
+    100068: Basketball_1_43
+    100070: bed_child001
+    100072: bed_child002
+    100074: body
+    100076: book
+    100078: book1
+    100080: book2
+    100082: book3
+    100084: book4
+    100086: box
+    100088: Box001
+    100090: box001
+    100092: Box001 1
+    100094: Box002
+    100096: Box003
+    100098: Box004
+    100100: Box005
+    100102: Box006
+    100104: Box006 1
+    100106: Box007
+    100108: Box007 1
+    100110: Box008
+    100112: Box009
+    100114: Box018
+    100116: Box019
+    100118: Box020
+    100120: Box021
+    100122: Box022
+    100124: Box023
+    100126: Box024
+    100128: Box025
+    100130: Box026
+    100132: Box027
+    100134: Box028
+    100136: Box029
+    100138: Box030
+    100140: Box031
+    100142: Box032
+    100144: Box033
+    100146: Box034
+    100148: Box035
+    100150: Box036
+    100152: Box037
+    100154: Box038
+    100156: Box039
+    100158: Box040
+    100160: Box041
+    100162: Box042
+    100164: Box043
+    100166: Box044
+    100168: Box045
+    100170: Box046
+    100172: Box047
+    100174: Box048
+    100176: Box049
+    100178: Box050
+    100180: Box051
+    100182: Box052
+    100184: Box053
+    100186: Box054
+    100188: Box055
+    100190: Box056
+    100192: Box057
+    100194: Box058
+    100196: Box059
+    100198: Box088
+    100200: Box089
+    100202: Box090
+    100204: Box091
+    100206: Box1292
+    100208: Box1293
+    100210: Box1294
+    100212: Box1295
+    100214: Box1296
+    100216: Box1297
+    100218: Box1298
+    100220: Box1299
+    100222: Box1300
+    100224: Box1301
+    100226: Box1302
+    100228: Box1303
+    100230: Box1304
+    100232: Box1305
+    100234: Box1306
+    100236: BUTTON1
+    100238: BUTTON2
+    100240: Car
+    100242: car
+    100244: chair
+    100246: ChamferBox011
+    100248: ChamferBox014
+    100250: ChamferBox40
+    100252: classic_wardrobe
+    100254: Cone001
+    100256: Cone002
+    100258: Cone004
+    100260: Cone005
+    100262: cover
+    100264: cover001
+    100266: cr
+    100268: cr001
+    100270: Cube
+    100272: Cube.000
+    100274: Cube.003
+    100276: Cube.004
+    100278: Cube.005
+    100280: Cube.006
+    100282: Cylinder003
+    100284: Cylinder003 1
+    100286: Cylinder004
+    100288: Cylinder004 1
+    100290: Cylinder005
+    100292: Cylinder005 1
+    100294: Cylinder006
+    100296: Cylinder006 1
+    100298: Cylinder007
+    100300: Cylinder008
+    100302: Cylinder009
+    100304: Cylinder010
+    100306: Cylinder458
+    100308: Cylinder459
+    100310: default
+    100312: desk
+    100314: frame
+    100316: frame001
+    100318: frame002
+    100320: front_fender
+    100322: //RootNode
+    100324: Grid001
+    100326: headlight
+    100328: holder_1__1
+    100330: lattice_1
+    100332: Layer:0
+    100334: LEGS
+    100336: lights
+    100338: Line002
+    100340: Line003
+    100342: Line004
+    100344: Line005
+    100346: obj_86
+    100348: obj_87
+    100350: objChamfer
+    100352: Object001
+    100354: Object002
+    100356: oven
+    100358: Particle View 01
+    100360: Plane001
+    100362: Plane002
+    100364: Plane003
+    100366: Plane01
+    100368: rear_fender
+    100370: SCREEN
+    100372: Shleve001
+    100374: Shleve002
+    100376: Sphere001
+    100378: Sphere002
+    100380: Sphere004
+    100382: Sphere005
+    100384: Sphere008
+    100386: Toilet
+    100388: Toilet001
+    100390: Torus002
+    100392: TV
+    100394: tv
+    100396: Uni
+    100398: Uni001
+    100400: wardrobe_body
+    100402: wardrobe_doors
+    100404: wardrobe_eaves
+    100406: wardrobe_foot
+    100408: wardrobe_handle
+    100410: wardrobe_levels
+    100412: wardrobe_ornaments
+    100414: wardrobe_pressure_bars
+    100416: wheel1_1
+    100418: wheel_1
+    100420: window
+    100422: window001
+    100424: window002
+    100426: ZChair34
+    100428: ZChair34 1
+    100430: ZChair35
+    100432: ZChair35 1
+    400000: AGA_Base006
+    400002: AGA_Cover007
+    400004: AGA_Cover008
+    400006: AGA_Cover_Base008
+    400008: AGA_Cover_Base009
+    400010: AGA_Cover_Handle013
+    400012: AGA_Cover_Handle014
+    400014: AGA_Cover_Handle015
+    400016: AGA_Cover_Handle016
+    400018: AGA_Cover_Hinge001
+    400020: AGA_Cover_Hinge002
+    400022: AGA_Door020
+    400024: AGA_Door023
+    400026: AGA_Door024
+    400028: AGA_Door025
+    400030: AGA_Door_Hinge001
+    400032: AGA_Door_Hinge002
+    400034: AGA_Door_Hinge003
+    400036: AGA_Door_Hinge004
+    400038: AGA_Door_Hinge005
+    400040: AGA_Door_Hinge006
+    400042: AGA_Door_Hinge007
+    400044: AGA_Door_Hinge008
+    400046: AGA_Door_Latch001
+    400048: AGA_Door_Latch002
+    400050: AGA_Door_Latch003
+    400052: AGA_Door_Latch004
+    400054: AGA_Front011
+    400056: AGA_Front012
+    400058: AGA_Handlebar009
+    400060: AGA_Top005
+    400062: ANTENA
+    400064: backlight
+    400066: basket
+    400068: Basketball_1_43
+    400070: bed_child001
+    400072: bed_child002
+    400074: body
+    400076: book
+    400078: book1
+    400080: book2
+    400082: book3
+    400084: book4
+    400086: box
+    400088: Box001
+    400090: box001
+    400092: Box001 1
+    400094: Box002
+    400096: Box003
+    400098: Box004
+    400100: Box005
+    400102: Box006
+    400104: Box006 1
+    400106: Box007
+    400108: Box007 1
+    400110: Box008
+    400112: Box009
+    400114: Box018
+    400116: Box019
+    400118: Box020
+    400120: Box021
+    400122: Box022
+    400124: Box023
+    400126: Box024
+    400128: Box025
+    400130: Box026
+    400132: Box027
+    400134: Box028
+    400136: Box029
+    400138: Box030
+    400140: Box031
+    400142: Box032
+    400144: Box033
+    400146: Box034
+    400148: Box035
+    400150: Box036
+    400152: Box037
+    400154: Box038
+    400156: Box039
+    400158: Box040
+    400160: Box041
+    400162: Box042
+    400164: Box043
+    400166: Box044
+    400168: Box045
+    400170: Box046
+    400172: Box047
+    400174: Box048
+    400176: Box049
+    400178: Box050
+    400180: Box051
+    400182: Box052
+    400184: Box053
+    400186: Box054
+    400188: Box055
+    400190: Box056
+    400192: Box057
+    400194: Box058
+    400196: Box059
+    400198: Box088
+    400200: Box089
+    400202: Box090
+    400204: Box091
+    400206: Box1292
+    400208: Box1293
+    400210: Box1294
+    400212: Box1295
+    400214: Box1296
+    400216: Box1297
+    400218: Box1298
+    400220: Box1299
+    400222: Box1300
+    400224: Box1301
+    400226: Box1302
+    400228: Box1303
+    400230: Box1304
+    400232: Box1305
+    400234: Box1306
+    400236: BUTTON1
+    400238: BUTTON2
+    400240: Car
+    400242: car
+    400244: chair
+    400246: ChamferBox011
+    400248: ChamferBox014
+    400250: ChamferBox40
+    400252: classic_wardrobe
+    400254: Cone001
+    400256: Cone002
+    400258: Cone004
+    400260: Cone005
+    400262: cover
+    400264: cover001
+    400266: cr
+    400268: cr001
+    400270: Cube
+    400272: Cube.000
+    400274: Cube.003
+    400276: Cube.004
+    400278: Cube.005
+    400280: Cube.006
+    400282: Cylinder003
+    400284: Cylinder003 1
+    400286: Cylinder004
+    400288: Cylinder004 1
+    400290: Cylinder005
+    400292: Cylinder005 1
+    400294: Cylinder006
+    400296: Cylinder006 1
+    400298: Cylinder007
+    400300: Cylinder008
+    400302: Cylinder009
+    400304: Cylinder010
+    400306: Cylinder458
+    400308: Cylinder459
+    400310: default
+    400312: desk
+    400314: frame
+    400316: frame001
+    400318: frame002
+    400320: front_fender
+    400322: //RootNode
+    400324: Grid001
+    400326: headlight
+    400328: holder_1__1
+    400330: lattice_1
+    400332: Layer:0
+    400334: LEGS
+    400336: lights
+    400338: Line002
+    400340: Line003
+    400342: Line004
+    400344: Line005
+    400346: obj_86
+    400348: obj_87
+    400350: objChamfer
+    400352: Object001
+    400354: Object002
+    400356: oven
+    400358: Particle View 01
+    400360: Plane001
+    400362: Plane002
+    400364: Plane003
+    400366: Plane01
+    400368: rear_fender
+    400370: SCREEN
+    400372: Shleve001
+    400374: Shleve002
+    400376: Sphere001
+    400378: Sphere002
+    400380: Sphere004
+    400382: Sphere005
+    400384: Sphere008
+    400386: Toilet
+    400388: Toilet001
+    400390: Torus002
+    400392: TV
+    400394: tv
+    400396: Uni
+    400398: Uni001
+    400400: wardrobe_body
+    400402: wardrobe_doors
+    400404: wardrobe_eaves
+    400406: wardrobe_foot
+    400408: wardrobe_handle
+    400410: wardrobe_levels
+    400412: wardrobe_ornaments
+    400414: wardrobe_pressure_bars
+    400416: wheel1_1
+    400418: wheel_1
+    400420: window
+    400422: window001
+    400424: window002
+    400426: ZChair34
+    400428: ZChair34 1
+    400430: ZChair35
+    400432: ZChair35 1
+    2100000: white
+    2100002: engine grille
+    2100004: car body
+    2100006: glass
+    2100008: headlight
+    2100010: rear lights
+    2100012: wheels
+    2100014: 02 - Default
+    2100016: 'Material #13'
+    2100018: shelf_wood
+    2100020: No Name
+    2100022: blue
+    2100024: 07 - Default
+    2100026: 20 - Default
+    2100028: mirror2
+    2100030: brown
+    2100032: 'Material #79'
+    2100034: 13 - Default
+    2100036: 04 - Default
+    2100038: 'Material #2097628860'
+    2100040: 02 - Defaultcasca
+    2100042: Wood
+    2100044: Table
+    2100046: sofa
+    2100048: sofa 2
+    2100050: 'Material #2097628167'
+    2100052: ac3dmat1
+    2100054: fireplace_yellow
+    2100056: 'Material #2097628848'
+    2100058: concrete
+    2100060: 'Material #2097628211'
+    2100062: 'Material #2097628228'
+    2100064: 'Material #2097628227'
+    2100066: 'Material #2097628224'
+    2100068: 'Material #2097628225'
+    2100070: 'Material #2097628226'
+    2100072: chrome
+    2100074: BLACK SHINE
+    2100076: Doors
+    2100078: BLACK
+    2100080: 'Material #2097628281'
+    2100082: 'Material #2097628280'
+    2100084: Keramica
+    2100086: Chroom
+    2100088: 'Material #2097628732'
+    2100090: _bedMaterial
+    2100092: 01 - Default
+    2300000: AGA_Base006
+    2300002: AGA_Cover007
+    2300004: AGA_Cover008
+    2300006: AGA_Cover_Base008
+    2300008: AGA_Cover_Base009
+    2300010: AGA_Cover_Hinge001
+    2300012: AGA_Cover_Hinge002
+    2300014: AGA_Door020
+    2300016: AGA_Door023
+    2300018: AGA_Door024
+    2300020: AGA_Door025
+    2300022: AGA_Door_Hinge001
+    2300024: AGA_Door_Hinge002
+    2300026: AGA_Door_Hinge003
+    2300028: AGA_Door_Hinge004
+    2300030: AGA_Door_Hinge005
+    2300032: AGA_Door_Hinge006
+    2300034: AGA_Door_Hinge007
+    2300036: AGA_Door_Hinge008
+    2300038: AGA_Door_Latch001
+    2300040: AGA_Door_Latch002
+    2300042: AGA_Door_Latch003
+    2300044: AGA_Door_Latch004
+    2300046: AGA_Front011
+    2300048: AGA_Front012
+    2300050: AGA_Handlebar009
+    2300052: AGA_Top005
+    2300054: backlight
+    2300056: Basketball_1_43
+    2300058: body
+    2300060: book
+    2300062: book1
+    2300064: book2
+    2300066: book3
+    2300068: book4
+    2300070: box
+    2300072: Box001
+    2300074: box001
+    2300076: Box001 1
+    2300078: Box002
+    2300080: Box003
+    2300082: Box004
+    2300084: Box005
+    2300086: Box006
+    2300088: Box006 1
+    2300090: Box007
+    2300092: Box007 1
+    2300094: Box008
+    2300096: Box009
+    2300098: Box018
+    2300100: Box019
+    2300102: Box020
+    2300104: Box021
+    2300106: Box022
+    2300108: Box023
+    2300110: Box024
+    2300112: Box025
+    2300114: Box026
+    2300116: Box027
+    2300118: Box028
+    2300120: Box029
+    2300122: Box030
+    2300124: Box031
+    2300126: Box032
+    2300128: Box033
+    2300130: Box034
+    2300132: Box035
+    2300134: Box036
+    2300136: Box037
+    2300138: Box038
+    2300140: Box039
+    2300142: Box040
+    2300144: Box041
+    2300146: Box042
+    2300148: Box043
+    2300150: Box044
+    2300152: Box045
+    2300154: Box046
+    2300156: Box047
+    2300158: Box048
+    2300160: Box049
+    2300162: Box050
+    2300164: Box051
+    2300166: Box052
+    2300168: Box053
+    2300170: Box054
+    2300172: Box055
+    2300174: Box056
+    2300176: Box057
+    2300178: Box058
+    2300180: Box059
+    2300182: Box088
+    2300184: Box089
+    2300186: Box090
+    2300188: Box091
+    2300190: Box1292
+    2300192: Box1293
+    2300194: Box1294
+    2300196: Box1295
+    2300198: Box1296
+    2300200: Box1297
+    2300202: Box1298
+    2300204: Box1299
+    2300206: Box1300
+    2300208: Box1301
+    2300210: Box1302
+    2300212: Box1303
+    2300214: Box1304
+    2300216: Box1305
+    2300218: Box1306
+    2300220: chair
+    2300222: ChamferBox40
+    2300224: Cone001
+    2300226: Cone002
+    2300228: Cone004
+    2300230: Cone005
+    2300232: cover
+    2300234: cover001
+    2300236: cr
+    2300238: cr001
+    2300240: Cube
+    2300242: Cube.000
+    2300244: Cube.003
+    2300246: Cube.004
+    2300248: Cube.005
+    2300250: Cube.006
+    2300252: Cylinder003
+    2300254: Cylinder003 1
+    2300256: Cylinder004
+    2300258: Cylinder004 1
+    2300260: Cylinder005
+    2300262: Cylinder005 1
+    2300264: Cylinder006
+    2300266: Cylinder006 1
+    2300268: Cylinder007
+    2300270: Cylinder008
+    2300272: Cylinder009
+    2300274: Cylinder010
+    2300276: Cylinder458
+    2300278: Cylinder459
+    2300280: default
+    2300282: desk
+    2300284: frame
+    2300286: frame001
+    2300288: frame002
+    2300290: front_fender
+    2300292: headlight
+    2300294: holder_1__1
+    2300296: lattice_1
+    2300298: Layer:0
+    2300300: Line002
+    2300302: Line003
+    2300304: Line004
+    2300306: Line005
+    2300308: obj_86
+    2300310: obj_87
+    2300312: objChamfer
+    2300314: Object001
+    2300316: Object002
+    2300318: Plane001
+    2300320: Plane002
+    2300322: Plane003
+    2300324: Plane01
+    2300326: rear_fender
+    2300328: Shleve001
+    2300330: Shleve002
+    2300332: Sphere001
+    2300334: Sphere002
+    2300336: Sphere004
+    2300338: Sphere005
+    2300340: Sphere008
+    2300342: Torus002
+    2300344: Uni
+    2300346: Uni001
+    2300348: wardrobe_body
+    2300350: wardrobe_doors
+    2300352: wardrobe_eaves
+    2300354: wardrobe_foot
+    2300356: wardrobe_handle
+    2300358: wardrobe_levels
+    2300360: wardrobe_ornaments
+    2300362: wardrobe_pressure_bars
+    2300364: wheel1_1
+    2300366: wheel_1
+    3300000: AGA_Base006
+    3300002: AGA_Cover007
+    3300004: AGA_Cover008
+    3300006: AGA_Cover_Base008
+    3300008: AGA_Cover_Base009
+    3300010: AGA_Cover_Hinge001
+    3300012: AGA_Cover_Hinge002
+    3300014: AGA_Door020
+    3300016: AGA_Door023
+    3300018: AGA_Door024
+    3300020: AGA_Door025
+    3300022: AGA_Door_Hinge001
+    3300024: AGA_Door_Hinge002
+    3300026: AGA_Door_Hinge003
+    3300028: AGA_Door_Hinge004
+    3300030: AGA_Door_Hinge005
+    3300032: AGA_Door_Hinge006
+    3300034: AGA_Door_Hinge007
+    3300036: AGA_Door_Hinge008
+    3300038: AGA_Door_Latch001
+    3300040: AGA_Door_Latch002
+    3300042: AGA_Door_Latch003
+    3300044: AGA_Door_Latch004
+    3300046: AGA_Front011
+    3300048: AGA_Front012
+    3300050: AGA_Handlebar009
+    3300052: AGA_Top005
+    3300054: backlight
+    3300056: Basketball_1_43
+    3300058: body
+    3300060: book
+    3300062: book1
+    3300064: book2
+    3300066: book3
+    3300068: book4
+    3300070: box
+    3300072: Box001
+    3300074: box001
+    3300076: Box001 1
+    3300078: Box002
+    3300080: Box003
+    3300082: Box004
+    3300084: Box005
+    3300086: Box006
+    3300088: Box006 1
+    3300090: Box007
+    3300092: Box007 1
+    3300094: Box008
+    3300096: Box009
+    3300098: Box018
+    3300100: Box019
+    3300102: Box020
+    3300104: Box021
+    3300106: Box022
+    3300108: Box023
+    3300110: Box024
+    3300112: Box025
+    3300114: Box026
+    3300116: Box027
+    3300118: Box028
+    3300120: Box029
+    3300122: Box030
+    3300124: Box031
+    3300126: Box032
+    3300128: Box033
+    3300130: Box034
+    3300132: Box035
+    3300134: Box036
+    3300136: Box037
+    3300138: Box038
+    3300140: Box039
+    3300142: Box040
+    3300144: Box041
+    3300146: Box042
+    3300148: Box043
+    3300150: Box044
+    3300152: Box045
+    3300154: Box046
+    3300156: Box047
+    3300158: Box048
+    3300160: Box049
+    3300162: Box050
+    3300164: Box051
+    3300166: Box052
+    3300168: Box053
+    3300170: Box054
+    3300172: Box055
+    3300174: Box056
+    3300176: Box057
+    3300178: Box058
+    3300180: Box059
+    3300182: Box088
+    3300184: Box089
+    3300186: Box090
+    3300188: Box091
+    3300190: Box1292
+    3300192: Box1293
+    3300194: Box1294
+    3300196: Box1295
+    3300198: Box1296
+    3300200: Box1297
+    3300202: Box1298
+    3300204: Box1299
+    3300206: Box1300
+    3300208: Box1301
+    3300210: Box1302
+    3300212: Box1303
+    3300214: Box1304
+    3300216: Box1305
+    3300218: Box1306
+    3300220: chair
+    3300222: ChamferBox40
+    3300224: Cone001
+    3300226: Cone002
+    3300228: Cone004
+    3300230: Cone005
+    3300232: cover
+    3300234: cover001
+    3300236: cr
+    3300238: cr001
+    3300240: Cube
+    3300242: Cube.000
+    3300244: Cube.003
+    3300246: Cube.004
+    3300248: Cube.005
+    3300250: Cube.006
+    3300252: Cylinder003
+    3300254: Cylinder003 1
+    3300256: Cylinder004
+    3300258: Cylinder004 1
+    3300260: Cylinder005
+    3300262: Cylinder005 1
+    3300264: Cylinder006
+    3300266: Cylinder006 1
+    3300268: Cylinder007
+    3300270: Cylinder008
+    3300272: Cylinder009
+    3300274: Cylinder010
+    3300276: Cylinder458
+    3300278: Cylinder459
+    3300280: default
+    3300282: desk
+    3300284: frame
+    3300286: frame001
+    3300288: frame002
+    3300290: front_fender
+    3300292: headlight
+    3300294: holder_1__1
+    3300296: lattice_1
+    3300298: Layer:0
+    3300300: Line002
+    3300302: Line003
+    3300304: Line004
+    3300306: Line005
+    3300308: obj_86
+    3300310: obj_87
+    3300312: objChamfer
+    3300314: Object001
+    3300316: Object002
+    3300318: Plane001
+    3300320: Plane002
+    3300322: Plane003
+    3300324: Plane01
+    3300326: rear_fender
+    3300328: Shleve001
+    3300330: Shleve002
+    3300332: Sphere001
+    3300334: Sphere002
+    3300336: Sphere004
+    3300338: Sphere005
+    3300340: Sphere008
+    3300342: Torus002
+    3300344: Uni
+    3300346: Uni001
+    3300348: wardrobe_body
+    3300350: wardrobe_doors
+    3300352: wardrobe_eaves
+    3300354: wardrobe_foot
+    3300356: wardrobe_handle
+    3300358: wardrobe_levels
+    3300360: wardrobe_ornaments
+    3300362: wardrobe_pressure_bars
+    3300364: wheel1_1
+    3300366: wheel_1
+    4300000: Layer:0
+    4300002: Object001
+    4300004: Object002
+    4300006: lattice_1
+    4300008: rear_fender
+    4300010: front_fender
+    4300012: body
+    4300014: headlight
+    4300016: backlight
+    4300018: wheel_1
+    4300020: wheel1_1
+    4300022: holder_1__1
+    4300024: Box001
+    4300026: Basketball_1_43
+    4300028: Box006
+    4300030: Plane002
+    4300032: Box007
+    4300034: Box008
+    4300036: Box009
+    4300038: Cylinder003
+    4300040: Cylinder004
+    4300042: Shleve001
+    4300044: chair
+    4300046: desk
+    4300048: book4
+    4300050: book3
+    4300052: book2
+    4300054: book1
+    4300056: book
+    4300058: frame
+    4300060: frame001
+    4300062: Box018
+    4300064: Box019
+    4300066: Box020
+    4300068: Box021
+    4300070: Box022
+    4300072: Box023
+    4300074: Box024
+    4300076: Box025
+    4300078: Box026
+    4300080: Box027
+    4300082: Box028
+    4300084: Box029
+    4300086: Box030
+    4300088: Box031
+    4300090: Box032
+    4300092: Box033
+    4300094: Box034
+    4300096: Box035
+    4300098: Box036
+    4300100: Box037
+    4300102: Box038
+    4300104: Box039
+    4300106: Box040
+    4300108: Box041
+    4300110: Box042
+    4300112: Box043
+    4300114: Box044
+    4300116: Box045
+    4300118: Box046
+    4300120: Box047
+    4300122: Box048
+    4300124: Box049
+    4300126: Box050
+    4300128: Box051
+    4300130: Box052
+    4300132: Box053
+    4300134: Box054
+    4300136: Box055
+    4300138: Box056
+    4300140: Box057
+    4300142: Box058
+    4300144: Box059
+    4300146: Plane003
+    4300148: Box088
+    4300150: Box089
+    4300152: Box090
+    4300154: Box091
+    4300156: Cylinder005
+    4300158: Cylinder006
+    4300160: Shleve002
+    4300162: frame002
+    4300164: Box007
+    4300166: Cylinder007
+    4300168: Cylinder008
+    4300170: Box005
+    4300172: Cylinder006
+    4300174: Box004
+    4300176: Cylinder005
+    4300178: Box002
+    4300180: Box001
+    4300182: Box003
+    4300184: Box006
+    4300186: Cylinder010
+    4300188: Cylinder009
+    4300190: Sphere002
+    4300192: Cylinder003
+    4300194: Cylinder004
+    4300196: Sphere004
+    4300198: Sphere005
+    4300200: Cone004
+    4300202: Cone005
+    4300204: Cone002
+    4300206: Cone001
+    4300208: Sphere001
+    4300210: Cube
+    4300212: ChamferBox40
+    4300214: obj_86
+    4300216: obj_87
+    4300218: Plane01
+    4300220: Box1292
+    4300222: Torus002
+    4300224: Cylinder458
+    4300226: Cylinder459
+    4300228: Box1293
+    4300230: Box1294
+    4300232: Box1295
+    4300234: Sphere008
+    4300236: Box1296
+    4300238: objChamfer
+    4300240: Line002
+    4300242: Line003
+    4300244: Line004
+    4300246: Line005
+    4300248: Box1297
+    4300250: Box1298
+    4300252: AGA_Handlebar009
+    4300254: AGA_Cover007
+    4300256: AGA_Cover008
+    4300258: AGA_Cover_Base008
+    4300260: AGA_Door020
+    4300262: AGA_Door023
+    4300264: AGA_Front011
+    4300266: AGA_Door024
+    4300268: AGA_Door_Latch004
+    4300270: AGA_Front012
+    4300272: AGA_Cover_Hinge001
+    4300274: AGA_Cover_Hinge002
+    4300276: AGA_Cover_Base009
+    4300278: AGA_Door_Hinge001
+    4300280: AGA_Door_Hinge002
+    4300282: AGA_Door_Hinge003
+    4300284: AGA_Door_Hinge004
+    4300286: AGA_Door_Hinge005
+    4300288: AGA_Door_Hinge006
+    4300290: AGA_Door_Hinge007
+    4300292: AGA_Door_Hinge008
+    4300294: AGA_Door_Latch001
+    4300296: AGA_Door_Latch002
+    4300298: AGA_Door_Latch003
+    4300300: AGA_Door025
+    4300302: AGA_Base006
+    4300304: AGA_Top005
+    4300306: Box1299
+    4300308: Cube.003
+    4300310: Cube.000
+    4300312: Cube.004
+    4300314: Cube.005
+    4300316: Cube.006
+    4300318: Box1300
+    4300320: box
+    4300322: cover
+    4300324: cr
+    4300326: Uni
+    4300328: Box1301
+    4300330: Box1302
+    4300332: Box1303
+    4300334: cover001
+    4300336: cr001
+    4300338: Uni001
+    4300340: Box1304
+    4300342: Box1305
+    4300344: Box1306
+    4300346: box001
+    4300348: default
+    4300350: Plane001
+    4300352: wardrobe_ornaments
+    4300354: wardrobe_foot
+    4300356: wardrobe_eaves
+    4300358: wardrobe_levels
+    4300360: wardrobe_doors
+    4300362: wardrobe_pressure_bars
+    4300364: wardrobe_body
+    4300366: wardrobe_handle
+    7400000: Take 001
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: ff2bb14fcde9f0448a809462ceaa3212, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: 8e61f56422c4a0240a7303ef4f46f994, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Defaultcasca
+    second: {fileID: 2100000, guid: dcf0a824c88df3748954290a96068765, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 04 - Default
+    second: {fileID: 2100000, guid: 23656f09042ddbb43ad9ed311f155a5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 07 - Default
+    second: {fileID: 2100000, guid: 11cf3acdf1d21fd4ea223c292ceade06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 13 - Default
+    second: {fileID: 2100000, guid: 2f08c836186059f4d8e268a1d157ae3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 20 - Default
+    second: {fileID: 2100000, guid: 5b0c5f3e36f0a054ab538412be362d57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BLACK
+    second: {fileID: 2100000, guid: 4be5e874095ed6f479a01f349ef1afd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BLACK SHINE
+    second: {fileID: 2100000, guid: 81a2214dc9b17684489c0deb7348bb28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chroom
+    second: {fileID: 2100000, guid: 772b385389b1e2e4dbdd97fd37727f53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Doors
+    second: {fileID: 2100000, guid: 0fb7823792620bc49b5367e4880c1fef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Keramica
+    second: {fileID: 2100000, guid: 1045758e117037546847aca9ce3928c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #13'
+    second: {fileID: 2100000, guid: 0c5a4d08ef8fbe04f92d287e40859dae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2097628167'
+    second: {fileID: 2100000, guid: 3e6064066cc607440bf84d7ae725b889, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2097628211'
+    second: {fileID: 2100000, guid: 5196fbcc0d8afca4ba8effb86451e977, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2097628224'
+    second: {fileID: 2100000, guid: 32d438aa7c1945c4fa8169c80f6d6bac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2097628225'
+    second: {fileID: 2100000, guid: 4472d85a23849ad4dba3278b0c10f2ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2097628226'
+    second: {fileID: 2100000, guid: 58acdd7dbc92cb44a807494e8f5898bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2097628227'
+    second: {fileID: 2100000, guid: 936519d2f0c02fe42acb051795cb7040, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2097628228'
+    second: {fileID: 2100000, guid: b9be6816a56dbf9499a8c2664ce237b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2097628280'
+    second: {fileID: 2100000, guid: 7631fd4dfb6475d419bda41c651ce77f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2097628281'
+    second: {fileID: 2100000, guid: cefe9b0d14160d245b1d894a21cd2fe6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2097628732'
+    second: {fileID: 2100000, guid: fb8679cc1d490294f9c782e496440f4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2097628848'
+    second: {fileID: 2100000, guid: bc319944f63f9fb4d92e4a63019fde63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2097628860'
+    second: {fileID: 2100000, guid: 5944dedda19275748be0759114bea072, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #79'
+    second: {fileID: 2100000, guid: 1ffd65aba9f4b514e8d53dd40a4d458b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 69222587bd71cba429c457f745291cbc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Table
+    second: {fileID: 2100000, guid: b7d7545c17f5f8143b3c66f8c32e8cbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: a9262308fa3c4844696bc88f122b70e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _bedMaterial
+    second: {fileID: 2100000, guid: e2e7c6877785019438a292285cd573de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ac3dmat1
+    second: {fileID: 2100000, guid: 60b0fe0c0f15de54d8c596262c9f55fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blue
+    second: {fileID: 2100000, guid: 13e03cfe1162e714cbf9d20c9e39eec8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: brown
+    second: {fileID: 2100000, guid: 7f63df5e07688534d8337a48dabd1f8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: car body
+    second: {fileID: 2100000, guid: 9bc0f9ccb18c48346a8bb629b5f0037e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chrome
+    second: {fileID: 2100000, guid: a3ffb75fc1c984f46a7e376b0fa23c72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete
+    second: {fileID: 2100000, guid: d509b1cdd7f29b84b93c15bacf7bb45f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: engine grille
+    second: {fileID: 2100000, guid: 992b4e1ee068f8f488318f0c36a174f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fireplace_yellow
+    second: {fileID: 2100000, guid: 45602242e3c815b41bcbac80da4159be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: aa5478b7a57569e43b9d3958974853ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: headlight
+    second: {fileID: 2100000, guid: 8a8b388d3c5509f4694dfeadd12c9947, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mirror2
+    second: {fileID: 2100000, guid: 308d77eb14354e9459cfc2ebd178ce66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rear lights
+    second: {fileID: 2100000, guid: a13816f5abe4cb245885de97dfa75d4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shelf_wood
+    second: {fileID: 2100000, guid: b7b489838924e2748a9b8378c0b5c4fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sofa
+    second: {fileID: 2100000, guid: 7d1b0dbdf57dcdc45ae4e4e166c3be05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sofa 2
+    second: {fileID: 2100000, guid: 46c9de263a5614642aeb3a52bc939a02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wheels
+    second: {fileID: 2100000, guid: b2ee5a40ad04bbb4296ba21ad6550ca6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2100000, guid: 571c900a3a03def4fac4232d41fe9557, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Red_wood
+    second: {fileID: 2800000, guid: 0ae8cbd45c9da1a41b9de6d19e948723, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2800000, guid: 5df371a3219c89c4b84d726226c82dae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: beton_texture972
+    second: {fileID: 2800000, guid: 09ed8b2019ca98545951d3464ca405d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: texture_2checker
+    second: {fileID: 2800000, guid: d80745f6d399bd64e91e3514f827c73b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wooden floor
+    second: {fileID: 2800000, guid: a400d6ac6a014cd4b86c044616cab327, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wooden texture
+    second: {fileID: 2800000, guid: d5cc1e2742dcb2d489e7fb5f969fbd55, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
