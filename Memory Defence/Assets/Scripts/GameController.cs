@@ -8,12 +8,12 @@ public class GameController : MonoBehaviour
 
    public void GameOver()
     {
-        SceneManager.LoadScene("Lose");
+        SceneManager.LoadScene("FirstScene");
     }
 
   public  void GameWin()
     {
-        SceneManager.LoadScene("Win");
+        SceneManager.LoadScene("FirstScene");
     }
 
 }

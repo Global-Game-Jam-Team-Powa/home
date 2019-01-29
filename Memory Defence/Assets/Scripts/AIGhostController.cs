@@ -8,6 +8,7 @@ public class AIGhostController : MonoBehaviour
     private Health health;
     public EnemyLevel Level = EnemyLevel.Level_1;
     private LifeManager LifeManager;
+    private TimeManager timeManager;
 
     private float waitTime;
     public float speed;
@@ -32,6 +33,7 @@ public class AIGhostController : MonoBehaviour
     {
         health = gameObject.GetComponent<Health>();
         LifeManager = GameObject.FindObjectOfType<LifeManager>();
+        timeManager = GameObject.FindObjectOfType<TimeManager>();
         waitTime = Random.Range(1, 6);
         randomSpot = Random.Range(0, moveSpots.Length);
         randomTarget = Random.Range(0, m_TargetList.Count);
@@ -43,24 +45,31 @@ public class AIGhostController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
-        if (randomSpotCounter < 4)
+        if (timeManager.isFinish || LifeManager.isFinish)
         {
-            GoRandomSpot();
-        }
-        else if (goTarget)
-        {
-            Vector3 targetPosition = m_TargetList[randomTarget].gameObject.transform.position + ghostPivot;
-
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
-        }
-        else if (randomSpotCounter == 4)
-        {
-            GoRandomSpot();
+            gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
         }
         else
         {
-            GoRandomOutSpot();
+            gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+            if (randomSpotCounter < 4)
+            {
+                GoRandomSpot();
+            }
+            else if (goTarget)
+            {
+                Vector3 targetPosition = m_TargetList[randomTarget].gameObject.transform.position + ghostPivot;
+
+                transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+            }
+            else if (randomSpotCounter == 4)
+            {
+                GoRandomSpot();
+            }
+            else
+            {
+                GoRandomOutSpot();
+            }
         }
     }
 
@@ -68,7 +77,7 @@ public class AIGhostController : MonoBehaviour
     {
         Vector3 targetPosition = moveSpots[randomSpot].position + ghostPivot;
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
-        if (Vector3.Distance(transform.position, targetPosition) < 0.2f)
+        if (Vector3.Distance(transform.position, targetPosition) < 0.01f)
         {
             randomSpotCounter++;
             randomSpot = Random.Range(0, moveSpots.Length);

@@ -8,6 +8,7 @@ public class TimeManager : MonoBehaviour
     Text time;
     GameController GM;
     public GameObject player;
+    public bool isFinish;
 
     // Start is called before the first frame update
     void Start()
@@ -20,10 +21,11 @@ public class TimeManager : MonoBehaviour
     void Update()
     {
         UpdateTime();
-        if (Time.timeSinceLevelLoad > 300)
+        if (Time.timeSinceLevelLoad > 300 && !isFinish)
         {
+            isFinish = true;
             player.transform.GetComponent<Animator>().SetBool("IsWin", true);
-           // GM.GameWin();
+            StartCoroutine("GameWin");
         }
     }
     void UpdateTime()
@@ -40,5 +42,11 @@ public class TimeManager : MonoBehaviour
             time.text = "00:00";
         }
 
+    }
+
+    public IEnumerator GameWin()
+    {
+        yield return new WaitForSeconds(15f);
+        GM.GameWin();
     }
 }
